@@ -1,7 +1,7 @@
 <?php
 defined('TYPO3_MODE') || die();
 
-call_user_func(function ($extKey, $table) {
+call_user_func(static function ($extKey, $table) {
     $additionalFields = [
         'cn_short_en' => 'cn_short_pl',
         'cn_official_name_en' => 'cn_official_name_pl',

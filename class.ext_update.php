@@ -37,7 +37,7 @@ use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
 class ext_update
 {
 
-    const EXTENSION_KEY = 'static_info_tables_pl';
+    public const EXTENSION_KEY = 'static_info_tables_pl';
 
     /**
      * Main function, returning the HTML content

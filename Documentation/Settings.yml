@@ -4,7 +4,7 @@
 
 ---
 conf.py:
-  copyright: 2019
+  copyright: 2020
   project: Static Info Tables (pl)
   version: 6.8
   release: 6.8.1
