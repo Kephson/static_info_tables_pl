@@ -1,4 +1,5 @@
-<?php
+<?php /** @noinspection PhpUndefinedVariableInspection */
+
 /***************************************************************
  * Extension Manager/Repository config file for ext "static_info_tables_pl".
  * Manual updates:
@@ -10,7 +11,7 @@ $EM_CONF[$_EXTKEY] = [
     'title' => 'Static Info Tables (pl)',
     'description' => 'Polish (pl) language pack for the Static Info Tables providing localized names for countries, currencies and so on.',
     'category' => 'misc',
-    'version' => '6.9.0',
+    'version' => '6.9.1',
     'state' => 'stable',
     'uploadfolder' => false,
     'createDirs' => '',
