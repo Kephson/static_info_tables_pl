@@ -2,7 +2,7 @@
 declare(strict_types=1);
 /***************************************************************
  *  Copyright notice
- *  (c) 2020 Ephraim Härer <ephraim.haerer@renolit.com>
+ *  (c) 2020-2024 Ephraim Härer <ephraim.haerer@renolit.com>
  *  All rights reserved
  *  This script is part of the TYPO3 project. The TYPO3 project is
  *  free software; you can redistribute it and/or modify
