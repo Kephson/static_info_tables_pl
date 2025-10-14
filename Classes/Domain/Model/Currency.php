@@ -6,6 +6,7 @@ namespace SJBR\StaticInfoTables\Domain\Model;
  *  Copyright notice
  *  (c) 2011-2012 Armin Rüdiger Vieweg <info@professorweb.de>
  *  (c) 2013 Stanislas Rolland <typo3(arobas)sjbr.ca>
+ *  (c) 2021-2025 Ephraim Härer <ephraim.haerer@renolit.com>
  *  All rights reserved
  *  This script is part of the TYPO3 project. The TYPO3 project is
  *  free software; you can redistribute it and/or modify
@@ -35,14 +36,14 @@ class Currency extends AbstractEntity
      *
      * @var string
      */
-    protected $namePl = '';
+    protected string $namePl = '';
 
     /**
      * Polish name of the currency subdivision unit
      *
      * @var string
      */
-    protected $subdivisionNamePl = '';
+    protected string $subdivisionNamePl = '';
 
     /**
      * Sets the Polish name of the currency
@@ -50,7 +51,7 @@ class Currency extends AbstractEntity
      * @param string $namePl
      * @return void
      */
-    public function setNamePl($namePl)
+    public function setNamePl(string $namePl): void
     {
         $this->namePl = $namePl;
     }
@@ -60,7 +61,7 @@ class Currency extends AbstractEntity
      *
      * @return string
      */
-    public function getNamePl()
+    public function getNamePl(): string
     {
         return $this->namePl;
     }
@@ -71,7 +72,7 @@ class Currency extends AbstractEntity
      * @param string $subdivisionNamePl
      * @return void
      */
-    public function setSubdivisionNamePl($subdivisionNamePl)
+    public function setSubdivisionNamePl(string $subdivisionNamePl): void
     {
         $this->subdivisionNamePl = $subdivisionNamePl;
     }
@@ -81,7 +82,7 @@ class Currency extends AbstractEntity
      *
      * @return string
      */
-    public function getSubdivisionNamePl()
+    public function getSubdivisionNamePl(): string
     {
         return $this->subdivisionNamePl;
     }

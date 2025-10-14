@@ -7,6 +7,7 @@ namespace SJBR\StaticInfoTables\Domain\Model;
  *  (c) 2011-2012 Armin Rüdiger Vieweg <info@professorweb.de>
  *  (c) 2013 Stanislas Rolland <typo3(arobas)sjbr.ca>
  *  (c) 2015 Tomasz Krawczyk <tomasz(na)typo3.pl>
+ *  (c) 2021-2025 Ephraim Härer <ephraim.haerer@renolit.com>
  *  All rights reserved
  *  This script is part of the TYPO3 project. The TYPO3 project is
  *  free software; you can redistribute it and/or modify
@@ -36,21 +37,21 @@ class Country extends AbstractEntity
      *
      * @var string
      */
-    protected $shortNamePl = '';
+    protected string $shortNamePl = '';
 
     /**
      * The Polish official name
      *
      * @var string
      */
-    protected $officialNamePl = '';
+    protected string $officialNamePl = '';
 
     /**
      * The Polish capital name
      *
      * @var string
      */
-    protected $capitalPl = '';
+    protected string $capitalPl = '';
 
     /**
      * Sets the Polish short name.
@@ -58,7 +59,7 @@ class Country extends AbstractEntity
      * @param string $shortNamePl
      * @return void
      */
-    public function setShortNamePl($shortNamePl)
+    public function setShortNamePl(string $shortNamePl): void
     {
         $this->shortNamePl = $shortNamePl;
     }
@@ -68,7 +69,7 @@ class Country extends AbstractEntity
      *
      * @return string
      */
-    public function getShortNamePl()
+    public function getShortNamePl(): string
     {
         return $this->shortNamePl;
     }
@@ -79,7 +80,7 @@ class Country extends AbstractEntity
      * @param string $officialNamePl
      * @return void
      */
-    public function setOfficialtNamePl($officialNamePl)
+    public function setOfficialtNamePl(string $officialNamePl): void
     {
         $this->officialNamePl = $officialNamePl;
     }
@@ -89,7 +90,7 @@ class Country extends AbstractEntity
      *
      * @return string
      */
-    public function getOfficialNamePl()
+    public function getOfficialNamePl(): string
     {
         return $this->officialNamePl;
     }
@@ -100,7 +101,7 @@ class Country extends AbstractEntity
      * @param string $capitalPl
      * @return void
      */
-    public function setCapitalPl($capitalPl)
+    public function setCapitalPl(string $capitalPl): void
     {
         $this->capitalPl = $capitalPl;
     }
@@ -110,7 +111,7 @@ class Country extends AbstractEntity
      *
      * @return string
      */
-    public function getCapitalPl()
+    public function getCapitalPl(): string
     {
         return $this->capitalPl;
     }

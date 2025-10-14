@@ -2,7 +2,7 @@
 declare(strict_types=1);
 /***************************************************************
  *  Copyright notice
- *  (c) 2020-2024 Ephraim Härer <ephraim.haerer@renolit.com>
+ *  (c) 2020-2025 Ephraim Härer <ephraim.haerer@renolit.com>
  *  All rights reserved
  *  This script is part of the TYPO3 project. The TYPO3 project is
  *  free software; you can redistribute it and/or modify
@@ -18,8 +18,14 @@ declare(strict_types=1);
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
+use SJBR\StaticInfoTables\Domain\Model\Country;
+use SJBR\StaticInfoTables\Domain\Model\CountryZone;
+use SJBR\StaticInfoTables\Domain\Model\Currency;
+use SJBR\StaticInfoTables\Domain\Model\Language;
+use SJBR\StaticInfoTables\Domain\Model\Territory;
+
 return [
-    \SJBR\StaticInfoTables\Domain\Model\Country::class => [
+    Country::class => [
         'tableName' => 'static_countries',
         'properties' => [
             'shortNamePl' => [
@@ -33,7 +39,7 @@ return [
             ],
         ],
     ],
-    \SJBR\StaticInfoTables\Domain\Model\CountryZone::class => [
+    CountryZone::class => [
         'tableName' => 'static_country_zones',
         'properties' => [
             'namePl' => [
@@ -41,7 +47,7 @@ return [
             ],
         ],
     ],
-    \SJBR\StaticInfoTables\Domain\Model\Currency::class => [
+    Currency::class => [
         'tableName' => 'static_currencies',
         'properties' => [
             'namePl' => [
@@ -52,7 +58,7 @@ return [
             ],
         ],
     ],
-    \SJBR\StaticInfoTables\Domain\Model\Language::class => [
+    Language::class => [
         'tableName' => 'static_languages',
         'properties' => [
             'namePl' => [
@@ -60,7 +66,7 @@ return [
             ],
         ],
     ],
-    \SJBR\StaticInfoTables\Domain\Model\Territory::class => [
+    Territory::class => [
         'tableName' => 'static_territories',
         'properties' => [
             'namePl' => [
