@@ -11,12 +11,12 @@
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Static Info Tables (pl)',
     'description' => 'Polish (pl) language pack for the Static Info Tables providing localized names for countries, currencies and so on.',
-    'version' => '13.4.0',
+    'version' => '12.4.1',
     'category' => 'misc',
     'constraints' => [
         'depends' => [
-            'typo3' => '13.4.0-13.4.99',
-            'static_info_tables' => '13.4.0-13.4.99',
+            'typo3' => '12.4.0-12.4.99',
+            'static_info_tables' => '12.4.0-12.4.99',
         ],
         'conflicts' => [],
         'suggests' => [],

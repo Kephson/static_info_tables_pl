@@ -6,6 +6,7 @@ namespace SJBR\StaticInfoTables\Domain\Model;
  *  Copyright notice
  *  (c) 2011-2012 Armin Rüdiger Vieweg <info@professorweb.de>
  *  (c) 2013 Stanislas Rolland <typo3(arobas)sjbr.ca>
+ *  (c) 2021-2025 Ephraim Härer <ephraim.haerer@renolit.com>
  *  All rights reserved
  *  This script is part of the TYPO3 project. The TYPO3 project is
  *  free software; you can redistribute it and/or modify
@@ -35,7 +36,7 @@ class CountryZone extends AbstractEntity
      *
      * @var string
      */
-    protected $namePl = '';
+    protected string $namePl = '';
 
     /**
      * Sets the Polish name.
@@ -43,7 +44,7 @@ class CountryZone extends AbstractEntity
      * @param string $namePl
      * @return void
      */
-    public function setNamePl($namePl)
+    public function setNamePl(string $namePl): void
     {
         $this->namePl = $namePl;
     }
@@ -53,7 +54,7 @@ class CountryZone extends AbstractEntity
      *
      * @return string
      */
-    public function getNamePl()
+    public function getNamePl(): string
     {
         if ($this->namePl === '') {
             return $this->getLocalName();
