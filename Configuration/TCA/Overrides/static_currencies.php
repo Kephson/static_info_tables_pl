@@ -13,5 +13,5 @@ call_user_func(
         'cu_name_en' => 'cu_name_pl',
         'cu_sub_name_en' => 'cu_sub_name_pl'
     ],
-    'static_info_tables_pl'
+    'static_currencies'
 );
